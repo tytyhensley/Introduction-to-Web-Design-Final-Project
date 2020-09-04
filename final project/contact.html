@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tyeece Hensley</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import google fonts-->
+   <link href="https://fonts.googleapis.com/css?family=Gilda+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Media query for narrow browser width -->
+    <link rel="stylesheet" media="only screen and (max-width: 549px)" href="mobile.css">
+
+    <!-- Media query for medium browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 550px) and (max-width: 1024px)" href="tablet.css">
+
+    <!-- Media query for full browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 1025px)" href="desktop.css">
+
+    <!-- Prevent smartphones from scaling pages down -->
+    <meta name="viewport" content="initial-scale=1"> 
+    
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <p class="c1">CALL</p>
+    <p class="c2">FOLLOW</p>
+    <p class="c3">EMAIL</p>
+    <p class="c4">TEXT</p>
+    <form name="contact" action="https://formspree.io/meqqyayb" method="POST"> <!--contact form implemetation made with formspree-->
+      <a href="https://www.instagram.com/tyty_hensley/?hl=en" target="_blank"><img src="https://cdn.glitch.com/fbc1da7c-a981-4689-8ab4-54aa1ae41b56%2Ficonmonstr-instagram-11.svg?v=1575901677486"></a>
+      <span class="filler">xx</span><a href="tel:+1631-565-5181"><i class="material-icons">smartphone</i></a><br>
+      <input class="input1" type="text" name="yourname" placeholder="What's your name?"><br>   
+      <input class="input2" type="email" name="email" placeholder="Where can I reach you?"><br>
+      <textarea class="input3" type="text" name="yourmessage" placeholder="What's your message for me?"></textarea><br>
+      <input class="input3" type="submit" value="SEND">
+      <a style="text-decoration: none; color: black" href="index.html"><i class="material-icons">house</i></a>
+    </form>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" 
+            integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" 
+            crossorigin="anonymous"></script>
+    <!--Jquery validation plugin-->
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <!--Jquery for form validation-->
+    <script src="formvalidation.js"></script>
+  </body>
+</html>

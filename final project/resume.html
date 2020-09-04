@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tyeece Hensley</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import google fonts-->
+   <link href="https://fonts.googleapis.com/css?family=Gilda+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Media query for narrow browser width -->
+    <link rel="stylesheet" media="only screen and (max-width: 549px)" href="mobile.css">
+
+    <!-- Media query for medium browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 550px) and (max-width: 1024px)" href="tablet.css">
+
+    <!-- Media query for full browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 1025px)" href="desktop.css">
+
+    <!-- Prevent smartphones from scaling pages down -->
+    <meta name="viewport" content="initial-scale=1"> 
+    
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="icon">
+        <div class="col1">
+          <a href="#sec1"><i class="material-icons">work_outline</i></a>
+        </div>
+        <div class="col2">
+          <a href="#sec2"><i class="material-icons">school</i></a>
+        </div>
+        <div class="col3">
+          <a href="#sec3"><i class="material-icons">laptop</i></a>
+        </div>
+    </div>
+    <div id="sec1">
+      <h1>
+         jobs
+        <a href="https://cdn.glitch.com/fbc1da7c-a981-4689-8ab4-54aa1ae41b56%2FCurriculum_Vitae-converted.pdf?v=1575757322710" target="_blank"><i class="material-icons">
+          attach_file
+          </i></a>
+      </h1>
+      <p>
+        <span class="r">Library Circulation Assistant</span><br>
+        New York University Abu Dhabi<br>
+        Sept 2017-Current
+      </p>
+      <p>
+        Human Resource Intern<br>
+        <span class="r">Wisynco Grp Ltd Jamaica</span><br>
+        June 6-24 2016
+      </p>
+      <p>
+        Volunteer<br>
+        Scotiabank Jamaica<br>
+        <span class="r">Sept 2016</span>
+      </p>
+      <p>
+        <a href="#icon"><i class="material-icons">
+          keyboard_arrow_up
+          </i></a>
+        <a href="index.html"><i class="material-icons">house</i></a>
+      </p>
+    </div>
+    <div id="sec2">
+      <h1>
+         schools
+        <a href="https://cdn.glitch.com/fbc1da7c-a981-4689-8ab4-54aa1ae41b56%2FCurriculum_Vitae-converted.pdf?v=1575757322710" target="_blank"><i class="material-icons">
+          attach_file
+          </i></a>
+      </h1>
+      <p>
+        <span class="g">New York University<br>
+        Abu Dhabi, UAE</span><br>
+        May 2021
+      </p>
+      <p>
+        Campion College<br>
+        Kingston, Jamaica<br>
+        <span class="g">June 2017</span>
+      </p>
+      <p>
+        <a href="#icon"><i class="material-icons">
+          keyboard_arrow_up
+          </i></a>
+        <a href="index.html"><i class="material-icons">house</i></a>
+      </p>
+    </div>
+    <div id="sec3">
+      <h1>
+         skills
+        <a href="https://cdn.glitch.com/fbc1da7c-a981-4689-8ab4-54aa1ae41b56%2FCurriculum_Vitae-converted.pdf?v=1575757322710" target="_blank"><i class="material-icons">
+          attach_file
+          </i></a>
+      </h1>
+      <p>
+        <span class="y">Python, Swift</span><br>
+        Beginner<br>
+      </p>
+      <p>
+        HTML, <span class="y">CSS<br>
+        Inter</span>mediate<br>
+      </p>
+      <p>
+        C, C++<br>
+        <span class="y">Experienced</span>
+      </p>
+      <p>
+        <a href="#icon"><i class="material-icons">
+          keyboard_arrow_up
+          </i></a>
+        <a href="index.html"><i class="material-icons">house</i></a>
+      </p>
+    </div>
+    
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" 
+            integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" 
+            crossorigin="anonymous"></script>
+    
+    <script> //adding smooth scroll effect across browsers
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+
+          var hash = this.hash;
+          
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 500, function(){
+
+          window.location.hash = hash;
+        });
+      } 
+    });
+  });
+  </script>
+  </body>
+</html>

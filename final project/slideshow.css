@@ -1,0 +1,22 @@
+.mobile{
+  animation: mobile 10s infinite;
+  background-size: cover;
+  background-postion: center;
+}
+.mobile a{
+  color: white;
+}
+.mobile header{
+  color: white;
+}
+@keyframes mobile{
+  0%,100%{
+    background-image: url("https://cdn.glitch.com/fbc1da7c-a981-4689-8ab4-54aa1ae41b56%2Fscreen1%20copy.png?v=1575774446859");
+  }
+  33% {
+    background-image: url("https://cdn.glitch.com/fbc1da7c-a981-4689-8ab4-54aa1ae41b56%2Fscreen2.png?v=1575774448383");
+  }
+  66% {
+    background-image: url("https://cdn.glitch.com/fbc1da7c-a981-4689-8ab4-54aa1ae41b56%2Fscreen3%20copy.png?v=1575774441913");
+  }
+}

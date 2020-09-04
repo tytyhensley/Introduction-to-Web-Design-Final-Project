@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tyeece Hensley</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Gilda+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Media query for narrow browser width -->
+    <link rel="stylesheet" media="only screen and (max-width: 549px)" href="mobile.css">
+
+    <!-- Media query for medium browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 550px) and (max-width: 1024px)" href="tablet.css">
+
+    <!-- Media query for full browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 1025px)" href="desktop.css">
+
+    <!-- Prevent smartphones from scaling pages down -->
+    <meta name="viewport" content="initial-scale=1"> 
+    
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+  
+  </head>  
+  <body style="background-color: black">
+     <div class="about" id="ABT">
+      <span style="text-align:right" onclick="closeAbt()">&times;</span>
+      <h2>'98</h2>
+      <h2>FEMALE</h2>
+      <h2>JAMAICA</h2>
+      <h2>CODING</h2>
+      <h2>GAMES</h2>
+    </div>
+    <video autoplay muted loop id="me">
+      <source src="https://cdn.glitch.com/fbc1da7c-a981-4689-8ab4-54aa1ae41b56%2Fhome.mp4?v=1575771058645" type="video/mp4">
+    </video>
+    <div class="blurb"><!--blurb that goes in the middle of video background-->
+      <h1>
+        be CURIOUS, not JUDGEMENTAL
+        </h1>
+      <p>-Walt Whitman</p>
+      <span onclick="openAbt()">=</span><br><br><!--calls js to open the side vnav bar-->
+      <a href="index.html"><i class="material-icons">house</i></a>
+    </div>
+  </body>
+</html>

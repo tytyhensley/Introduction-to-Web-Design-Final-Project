@@ -1,0 +1,194 @@
+/*CSS for landing page*/
+body{
+  margin: 0;
+  padding: 0;
+}
+header{
+  font-family: "Baskervville";
+}
+a{
+  text-decoration: none;
+}
+.wrapper{
+  height: 100vh;
+  background-color: white;
+  background-image: none;
+  background-size: cover;
+  background-postion: center;
+}
+.wrapper a{
+  color: black;
+}
+#links a{
+  font-family: "Gilda Display";
+  transition: 0.5s
+}
+#links{
+  text-align: center;
+}
+#links a:hover{
+  border-bottom: 5px solid white;
+  color: white;
+}
+
+/*CSS for about page*/
+#me{
+  height: 100vh;
+  width: 100%;
+  background-poisition: absolute;
+  object-fit: cover;
+}
+.blurb a{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.blurb h1{
+  font-family: "Space Mono";
+}
+.blurb p{
+  font-family: "Baskervville";
+  font-style:italic;
+}
+.blurb{
+  position: absolute;
+  color: white;
+  text-align:center;
+}
+.blurb span{
+  cursor: pointer;
+  color: white;
+}
+.about{
+  position: absolute;
+  color: black;
+  background-color: white;
+  height: 100%;
+  width:0;
+  opacity:0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.about h2{
+  font-family: "Gilda Display";
+}
+
+/*Css for resume page*/
+#icon{
+  height: 100vh;
+}
+.col1, .col2, .col3{
+  font-size: 50px;
+  float: left;
+  width: 33.33%;
+  height: 100vh;
+  line-height: 100vh;
+  text-align: center;
+  vertical-align: middle;
+}
+#icon a{
+  color: black;
+}
+#sec1, #sec3{
+  height: 100vh;
+  background-color: black;
+}
+#sec2{
+  height: 100vh;
+  text-align: right;
+}
+#sec1 h1, #sec2 h1, #sec3 h1{
+  font-family: "Space Mono";
+}
+#sec1 p, #sec2 p, #sec3 p{
+  font-family: "Work Sans";
+}
+#sec1 a, #sec3 a{
+  color: white;
+}
+#sec2 a{
+  color: black;
+}
+.r{
+  color: red;
+}
+.g{
+  color: green;
+}
+.y{
+  color: yellow
+}
+
+/*Css for contact page*/
+form{
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+  text-align: center;
+}
+.c1, .c2, .c3, .c4{
+  font-family:"Gilda Display";
+  opacity: 0.4;
+  position: fixed;
+}
+.c1{
+  left: 50%;
+  transform: translate(-50%, -90%);
+}
+.c2{
+  top: 50%;
+  transform-origin:0 0;
+  transform: rotate(-90deg) translate(-40%);
+}
+.c3{
+  top: 50%;
+  left: 100%;
+  transform-origin:0 0;
+  transform: rotate(90deg) translate(-60%);
+}
+.c4{
+ left: 50%;
+  top: 80%;
+  transform: rotate(180deg) translate(50%);
+}
+.filler{
+  color: white;
+}
+input[type=text],input[type=email],textarea[type=text] {
+  width:100%;
+  box-sizing: border-box;
+  border-style: none none solid none; 
+  font-family="Work Sans";
+}    
+input[type=submit] {
+    width:100%;
+    border-style: none;
+    background-color: white;
+    font-family="Work Sans";
+}
+::placeholder{
+  opacity: 0.8;
+  color:grey;
+  font-family:"Work Sans";
+}
+.input2{
+  border-color:#ffd700;
+  color:#ffd700;
+}
+.input3{
+  border-color:green;
+  color: green;
+}
+.error{
+  color: red;
+  font-family:"Work Sans";
+}
+a[href^="tel:"] {
+  color: black;
+  text-decoration: none;
+}
